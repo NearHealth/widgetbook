@@ -2,7 +2,7 @@
 
 Static web build of the Flutter Widgetbook for the NearHealth app.
 
-Live internal GitHub Pages URL:
+Configured internal GitHub Pages URL:
 
 ```text
 https://sturdy-adventure-l4jo9ze.pages.github.io/
@@ -25,6 +25,19 @@ From the `main_app` repo root:
 The deploy script builds the Widgetbook static bundle with `BASE_HREF=/`, syncs
 `flutter_app/build/web/` into this repo, strips bundled `assets/.env*` files,
 adds `.nojekyll`, commits, and pushes `main`.
+
+## GitHub Pages Status
+
+As of June 9, 2026, this repo is private and GitHub rejects manual Pages builds
+with:
+
+```text
+Page is disabled because current plan does not support private GitHub Pages
+```
+
+The static files are published here, but serving them live from GitHub Pages
+requires private Pages support on the NearHealth org plan, making this repo
+public, or moving the generated bundle to another static host.
 
 ## Maintenance Notes
 
